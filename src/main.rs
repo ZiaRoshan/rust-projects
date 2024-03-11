@@ -19,7 +19,7 @@ fn main() {
     //Functions
     println!("The function returned - {}", return_function()); //Here we called a function which can return value
     single_attribute_function("Hello my name is Zia"); //Here we called a function and passed a single parameter in it  
-    multiple_attribute_function("Zia", "Roshan", 22);
+    multiple_attribute_function("Zia", "Roshan", 22); //Here we called a function and passed a multiple parameters in it 
 
     let funrets = single_attribute_function_with_return(2); //Here we stored the value the function returned into the variable
     println!("The Single attribute function return - {}", funrets);
@@ -27,12 +27,12 @@ fn main() {
     let funretm = multiple_attribute_function_with_return(4, 5); //Here we stored the value the function returned into the variable
     println!("The Multiple attributes function return - {}", funretm);
 
-    let counted_itterations = loop_function(25);
+    let counted_itterations = loop_function(25); //Here we called the loop
     println!("The loop executed the statements {} times", counted_itterations);
 
-    for_loop();
+    for_loop(); //Here we called for loop
 
-    let while_itterations = while_function(12);
+    let while_itterations = while_function(12); //Here we called while loop
     println!("The while loop executed {} times", while_itterations);
 }
 
