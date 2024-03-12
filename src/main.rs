@@ -34,6 +34,9 @@ fn main() {
 
     let while_itterations = while_function(12); //Here we called while loop
     println!("The while loop executed {} times", while_itterations);
+
+
+    use_of_struct();
 }
 
 
@@ -129,3 +132,33 @@ fn while_function(itterations: i32) -> i32 {
 
     return itterations;
 }
+
+
+//Struct use #Struct AKA Structure are a keyword use to define a common structure of something
+
+struct Employee {
+    username: String,
+    password: String,
+    age: u16,
+    gender: String,
+    salary: u32
+}
+
+fn use_of_struct() {
+    let mut emp1 = Employee {
+        username: String::from("Bantu"),
+        password: String::from("Lxc789@!#$44*&^*^34"),
+        age: 25,
+        gender: String::from("Male"),
+        salary: 250000
+    };
+
+    println!("When {} was {} years old his salary was {}, {} is a {}", emp1.username, emp1.age, emp1.salary, emp1.username, emp1.gender);
+    
+    emp1.age = 44;
+    emp1.salary = 1900000;
+
+    println!("Now {} is {} years old, and his salary is {}", emp1.username, emp1.age, emp1.salary);
+}
+
+
